@@ -1,11 +1,49 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+h1 {
+  font-size: 40px;
+  margin: 20px;
+  font-weight: 100;
+  color: #fff;
+  line-height: 28px;
+}
 li {
   list-style: none;
+}
+.weather-app {
+  padding: 0px 0px 15px 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background-image: linear-gradient(15deg, #74a1b9, #80d0c7);
+}
+.app-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+}
+.date {
+  margin: 20px;
+  padding: 0;
 }
 .description {
   position: relative;
   bottom: 20px;
   left: 70px;
+}
+.details {
+  padding: 0;
+  position: relative;
+  bottom: 70px;
+  font-size: 10px;
+  margin: 0px 0px 0px 20px;
+}
+.right-part {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+  padding: 0px 20px;
+  bottom: 10px;
+  right: 10px;
+  margin: 0 auto;
 }
