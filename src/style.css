@@ -1,3 +1,11 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+li {
+  list-style: none;
+}
+.description {
+  position: relative;
+  bottom: 20px;
+  left: 70px;
+}

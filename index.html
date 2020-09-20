@@ -23,26 +23,33 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app-wrapper"></div>
-      <div class="overview">
+      <div class="weather-app">
         <h1 id="city">Amsterdam</h1>
-        <h2 id="date">Sunday 21:45</h2>
-        <p id="description"><small>Cloudy</small></p>
-      </div>
-    </div>
-    <br />
-    <h3 class="mainTemperature">
-  <strong id="temperature">17</strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> |
-    <a href="#" id="fahrenheit-link">°F</a></span>
-    </h3>
+        <ul>
+          <li class="date" id="date">Sunday 21:45</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="Clear"
+            />
+            16°C|°F
+            <p class="description" id="description"><small>Cloudy</small></p>
           </div>
         </div>
+        <br />
+        <ul class="details">
+          <li>Humidity: <span id="humidity"></span>72%</li>
+          <li>Wind: <span id="wind"></span>19km/h</li>
+        </ul>
+        <small>
+          <a href="https://github.com/Alinadot/my-weather-app" target="_blank"
+            >Open-source code</a
+          >
+          by Alina Shamko
+        </small>
       </div>
-    <small>
-      <a href="https://github.com/Alinadot/my-weather-app" target="_blank">Open-source code</a>
-      by Alina Shamko
-    </small>
-    </div>
     </div>
     <script src="src/index.js"></script>
   </body>
