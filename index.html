@@ -24,25 +24,56 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <h1 id="city">Amsterdam</h1>
-        <ul>
-          <li class="date" id="date">Sunday 21:45</li>
-        </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="Clear"
-            />
-            16°C|°F
-            <p class="description" id="description"><small>Cloudy</small></p>
+        <div class="left-part">
+          <h1 id="city">Amsterdam</h1>
+          <ul>
+            <li class="date" id="date">Sunday 21:45</li>
+          </ul>
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Clear"
+              />
+              16°C|°F
+              <p class="description" id="description"><small>Cloudy</small></p>
+            </div>
+            <div class="col-md-6">
+              <ul class="right-part">
+                <li class="first">
+                  Monday
+                  <i class="fas fa-cloud-rain"></i>
+                  <strong> 24°C</strong>
+                </li>
+                <li class="second">
+                  Tuesday
+                  <i class="fas fa-cloud-rain"></i>
+                  <strong> 22°C</strong>
+                </li>
+                <li class="third">
+                  Wednesday
+                  <i class="fas fa-cloud-sun"></i>
+                  <strong> 25°C</strong>
+                </li>
+                <li class="forth">
+                  Thursday
+                  <i class="fas fa-cloud-rain"></i>
+                  <strong> 28°C</strong>
+                </li>
+                <li class="forth">
+                  Friday
+                  <i class="fas fa-cloud-rain"></i>
+                  <strong> 26°C</strong>
+                </li>
+              </ul>
+            </div>
           </div>
+          <br />
+          <ul class="details">
+            <li>Humidity: <span id="humidity"></span>72%</li>
+            <li>Wind: <span id="wind"></span>19km/h</li>
+          </ul>
         </div>
-        <br />
-        <ul class="details">
-          <li>Humidity: <span id="humidity"></span>72%</li>
-          <li>Wind: <span id="wind"></span>19km/h</li>
-        </ul>
         <small>
           <a href="https://github.com/Alinadot/my-weather-app" target="_blank"
             >Open-source code</a
