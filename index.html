@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ac12c783d1.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather app</title>
   </head>
   <body>
     <div class="container">
-      <h1>HELLO</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+      <div class="overview">
+        <h1 id="city">Amsterdam</h1>
+        <h2 id="date">Sunday 21:45</h2>
+        <h3 id="condition"><small>Cloudy</small></h3>
+      </div>
+    </div>
+    <small>
+      <a href="https://github.com/Alinadot/my-weather-app" target="_blank">Open-source code</a>
+      by Alina Shamko
+    </small>
+    </div>
     </div>
     <script src="src/index.js"></script>
   </body>
