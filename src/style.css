@@ -33,7 +33,7 @@ li {
 .details {
   padding: 0;
   position: relative;
-  bottom: 70px;
+  bottom: 20px;
   font-size: 10px;
   margin: 0px 0px 0px 20px;
 }
@@ -45,5 +45,14 @@ li {
   padding: 0px 20px;
   bottom: 10px;
   right: 10px;
-  margin: 0 auto;
+  margin: 0;
+}
+.weather-temperature strong {
+  font-size: 40px;
+  line-height: 1;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -18px;
 }

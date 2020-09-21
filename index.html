@@ -32,14 +32,24 @@
             </ul>
             <div class="row">
               <div class="col-md-6">
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                  alt="Clear"
-                />
-                16°C|°F
+                <div class="weather-temperature">
+                  <img
+                    src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                    alt="Clear"
+                  />
+                  <strong>16</strong>
+                  <span class="units">
+                    °C |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </div>
                 <p class="description" id="description">
                   <small>Cloudy</small>
                 </p>
+                <ul class="details">
+                  <li>Humidity: <span id="humidity"></span>72%</li>
+                  <li>Wind: <span id="wind"></span>19km/h</li>
+                </ul>
               </div>
               <div class="col-md-6">
                 <ul class="right-part">
@@ -72,10 +82,6 @@
               </div>
             </div>
             <br />
-            <ul class="details">
-              <li>Humidity: <span id="humidity"></span>72%</li>
-              <li>Wind: <span id="wind"></span>19km/h</li>
-            </ul>
           </div>
         </div>
         <small>
