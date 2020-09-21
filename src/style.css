@@ -11,6 +11,10 @@ h1 {
 li {
   list-style: none;
 }
+p {
+  text-transform: capitalize;
+  font-size: 10px;
+}
 .weather-app {
   padding: 0px 0px 15px 20px;
   border: 1px solid #dadde1;
