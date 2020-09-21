@@ -67,3 +67,7 @@ p {
 .form-control {
   border: 4px solid #e7b51d;
 }
+.btn-warning {
+  position: relative;
+  right: 20px;
+}
