@@ -71,3 +71,10 @@ p {
   position: relative;
   right: 20px;
 }
+.weather-temperature .active {
+  color: white;
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
