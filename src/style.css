@@ -99,3 +99,7 @@ p {
   position: relative;
   bottom: 20px;
 }
+.day-time {
+  font-size: 10px;
+  color: #e7b51d;
+}

@@ -51,22 +51,22 @@ function displayForecast(response) {
   console.log(forecast);
 
   forecastElement.innerHTML = `
-  <span class="col-md-6">
-                <ul class="right-details">
-                  <li class="first">
+                <span class="right-details">
+                 <span class="first">
                     Sun
-                    <img src= "http://openweathermap.org/img/wn/${
-                      forecast.weather[0].icon
-                    }@2x.png"
+                    <small class="day-time">12:00</small>
+                  <img src= "http://openweathermap.org/img/wn/${
+                    forecast.weather[0].icon
+                  }@2x.png"
                     />
                     <span class="forecast-temperature">
                     <strong> ${Math.round(
                       forecast.main.temp_max
                     )}°</strong> / ${Math.round(forecast.main.temp_min)}°
                     </span>
-                  </li>
-                  </ul>
-                </span>`;
+                  </span>
+                  </span>
+                `;
 }
 
 function searchCity(city) {
