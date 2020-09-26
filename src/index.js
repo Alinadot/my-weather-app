@@ -45,10 +45,37 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  console.log(forecast);
+
+  forecastElement.innerHTML = `
+  <span class="col-md-6">
+                <ul class="right-details">
+                  <li class="first">
+                    Sun
+                    <img src= "http://openweathermap.org/img/wn/${
+                      forecast.weather[0].icon
+                    }@2x.png"
+                    />
+                    <span class="forecast-temperature">
+                    <strong> ${Math.round(
+                      forecast.main.temp_max
+                    )}°</strong> / ${Math.round(forecast.main.temp_min)}°
+                    </span>
+                  </li>
+                  </ul>
+                </span>`;
+}
+
 function searchCity(city) {
   let apiKey = "10844e995ee350a31ff9d6258cf6674b";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},us&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function searchLocation(position) {
