@@ -71,7 +71,7 @@ function displayForecast(response) {
                     <small class="day-time">${dayHours(
                       forecast.dt * 1000
                     )}</small>
-                  <img clas= "iconSize" src= "http://openweathermap.org/img/wn/${
+                  <img class= "icon-size" src= "http://openweathermap.org/img/wn/${
                     forecast.weather[0].icon
                   }@2x.png"
                     />
