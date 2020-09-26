@@ -70,6 +70,8 @@ p {
 .btn-warning {
   position: relative;
   right: 20px;
+  transition: all 200ms ease;
+  color: white;
 }
 .weather-temperature .active {
   color: white;
@@ -77,4 +79,13 @@ p {
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+.btn-outline-warning {
+  position: relative;
+  right: 20px;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+  opacity: 1;
+  color: white;
+  border: none;
 }
