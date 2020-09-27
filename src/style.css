@@ -2,15 +2,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 h1 {
+  position: relative;
+  top: 10px;
   font-size: 40px;
-  margin-left: 40px;
+  margin-left: 30px;
   font-weight: 100;
   color: #fff;
 }
 h2 {
   font-size: 20px;
   color: white;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 li {
   list-style: none;
@@ -29,6 +31,7 @@ hr {
   border: 1px solid #dadde1;
   border-radius: 10px;
   background-image: linear-gradient(15deg, #74a1b9, #80d0c7);
+  box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
 .app-wrapper {
   max-width: 600px;
@@ -97,9 +100,6 @@ hr {
   border: none;
 }
 
-.forecast-temperature strong {
-  font-weight: bo;
-}
 .icon-size {
   width: 50px;
   height: 50px;
@@ -109,7 +109,13 @@ hr {
   position: relative;
   bottom: 20px;
 }
-.day-time {
+.day-time strong {
   font-size: 15px;
   color: white;
+}
+.forecast-temperature strong {
+  color: black;
+}
+.forecast-temperature {
+  font-size: 15px;
 }

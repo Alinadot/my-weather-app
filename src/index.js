@@ -68,15 +68,19 @@ function displayForecast(response) {
     forecastElement.innerHTML += `
                 <div class="right-details">
                  <span class="first">
-                  <span class="day-time">${dayHours(forecast.dt * 1000)}</span>
+                  <span class="day-time"><strong>${dayHours(
+                    forecast.dt * 1000
+                  )}</strong></span>
                   <img class= "icon-size" src= "http://openweathermap.org/img/wn/${
                     forecast.weather[0].icon
                   }@2x.png"
                     />
                     <span class="forecast-temperature">
-                    <strong> ${Math.round(
-                      forecast.main.temp_max
-                    )}°</strong> / ${Math.round(forecast.main.temp_min)}°
+                     ${Math.round(
+                       forecast.main.temp_max
+                     )}°/ <strong> ${Math.round(
+      forecast.main.temp_min
+    )}°</strong> 
                     </span>
                   </span>
                   </div>
