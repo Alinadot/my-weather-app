@@ -16,7 +16,6 @@ h2 {
 }
 li {
   list-style: none;
-  display: inline-block;
   padding-left: 10px;
 }
 p {
@@ -47,21 +46,24 @@ hr {
 }
 .main-icon {
   margin-left: 20px;
+  width: 200px;
+  height: 200px;
 }
 .description {
   position: relative;
-  bottom: 30px;
-  left: 100px;
+  bottom: 90px;
+  left: 40px;
   margin-left: 30px;
   color: white;
 }
 .details {
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
   font-size: 10px;
-  margin-left: -10px;
+  margin-left: 20px;
   color: #625772;
 }
+
 .right-part {
   color: #fff;
   position: relative;
@@ -70,6 +72,16 @@ hr {
   right: -30px;
 }
 
+.main-temperature {
+  position: relative;
+  bottom: 0px;
+  left: 70px;
+}
+.units {
+  position: relative;
+  left: 70px;
+  bottom: 100px;
+}
 .weather-temperature strong {
   font-size: 40px;
   line-height: 1;
