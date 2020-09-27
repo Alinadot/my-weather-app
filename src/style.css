@@ -14,13 +14,18 @@ h2 {
 }
 li {
   list-style: none;
+  display: inline-block;
+  padding-left: 10px;
 }
 p {
   text-transform: capitalize;
   font-size: 10px;
 }
+hr {
+  padding: 0;
+  margin: 0;
+}
 .weather-app {
-  padding: 0px 0px 15px 20px;
   border: 1px solid #dadde1;
   border-radius: 10px;
   background-image: linear-gradient(15deg, #74a1b9, #80d0c7);
@@ -29,6 +34,10 @@ p {
   max-width: 600px;
   margin: 20px auto;
 }
+
+.mt-4 {
+  padding: 0px 0px 0px 20px;
+}
 .date {
   margin: 20px;
   padding: 0;
@@ -36,25 +45,22 @@ p {
 .description {
   position: relative;
   bottom: 20px;
-  left: 70px;
+  left: 100px;
 }
 .details {
-  padding: 0;
   position: relative;
   bottom: 20px;
   font-size: 10px;
-  margin: 0px 0px 0px 20px;
+  left: -30px;
 }
 .right-part {
   color: #fff;
   position: relative;
-  text-align: left;
-  line-height: 40px;
-  padding: 0px 20px;
-  bottom: 10px;
-  right: 10px;
-  margin: 0;
+  line-height: 50px;
+  bottom: -25px;
+  right: -30px;
 }
+
 .weather-temperature strong {
   font-size: 40px;
   line-height: 1;
@@ -91,8 +97,8 @@ p {
 }
 
 .icon-size {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin: 0px 30px 0px 30px;
 }
 .right-details {
@@ -100,6 +106,6 @@ p {
   bottom: 20px;
 }
 .day-time {
-  font-size: 10px;
-  color: #e7b51d;
+  font-size: 15px;
+  color: white;
 }
