@@ -11,7 +11,7 @@ h1 {
 }
 h2 {
   font-size: 20px;
-  color: white;
+  color: #625772;
   margin-left: 30px;
 }
 li {
@@ -27,6 +27,10 @@ hr {
   border: 1px solid white;
 }
 
+.separate {
+  color: #625772;
+}
+
 .weather-app {
   border: 1px solid #dadde1;
   border-radius: 10px;
@@ -34,7 +38,7 @@ hr {
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
 }
 .app-wrapper {
-  max-width: 600px;
+  max-width: 500px;
   margin: 20px auto;
 }
 
@@ -56,6 +60,7 @@ hr {
   bottom: 30px;
   font-size: 10px;
   margin-left: -10px;
+  color: #625772;
 }
 .right-part {
   color: #fff;
@@ -68,6 +73,7 @@ hr {
 .weather-temperature strong {
   font-size: 40px;
   line-height: 1;
+  color: #625772;
 }
 .weather-temperature .units {
   position: relative;
@@ -92,7 +98,8 @@ hr {
 }
 .btn-outline-warning {
   position: relative;
-  right: 20px;
+  right: 30px;
+  top: 0px;
   transition: all 200ms ease;
   box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
   opacity: 1;
@@ -108,13 +115,17 @@ hr {
 .right-details {
   position: relative;
   bottom: 20px;
+  right: 20px;
 }
 .day-time strong {
-  font-size: 15px;
+  font-size: 10px;
   color: white;
+  position: relative;
+  right: -40px;
+  bottom: 10px;
 }
 .forecast-temperature strong {
-  color: black;
+  color: #625772;
 }
 .forecast-temperature {
   font-size: 15px;
