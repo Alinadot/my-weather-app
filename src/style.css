@@ -47,14 +47,14 @@ hr {
 .main-icon {
   position: relative;
   left: 50px;
-  bottom: 30px;
+  bottom: 5px;
   width: 200px;
   height: 200px;
 }
 .description {
   position: relative;
-  bottom: 100px;
-  left: 70px;
+  top: 0px;
+  left: 0px;
   margin-left: 30px;
   color: white;
 }
@@ -66,9 +66,9 @@ hr {
 }
 .details {
   position: relative;
-  bottom: 0px;
+  bottom: 20px;
   font-size: 10px;
-  left: 60px;
+  left: 55px;
   color: #625772;
 }
 

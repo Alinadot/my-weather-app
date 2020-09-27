@@ -50,6 +50,9 @@
             </form>
             <h1 id="city"></h1>
             <h2 class="date" id="date"></h2>
+            <p class="description" id="description">
+              <small></small>
+            </p>
             <hr>
             <div class="row">
               <div class="col-md-6">
@@ -60,20 +63,17 @@
                     id="icon"
                     class="main-icon"
                   />
+                  <ul class="details">
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span> Km/H</li>
+                  </ul>
                   <strong class="main-temperature" id="temperature"></strong>
                   <span class="units">
                     <a href="#" id="celsius-link" class="active">°C</a> <span class="separate">|</span>
                     <a href="#" id="fahrenheit-link">°F</a>
                   </span>
                 </div>
-                <p class="description" id="description">
-                  <small></small>
-                </p>
-                <ul class="details">
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind: <span id="wind"></span> Km/H</li>
-                   </ul>
-                 </div>
+                                 </div>
                 <div class="right-part" id="forecast">
               </div>
             </div>
