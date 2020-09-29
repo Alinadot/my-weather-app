@@ -42,7 +42,6 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-  let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
@@ -66,25 +65,21 @@ function displayForecast(response) {
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
-                <div class="right-details">
-                 <span class="first">
-                  <span class="day-time"><strong>${dayHours(
-                    forecast.dt * 1000
-                  )}</strong></span>
-                  <img class= "icon-size" src= "http://openweathermap.org/img/wn/${
-                    forecast.weather[0].icon
-                  }@2x.png"
-                    />
-                    <span class="forecast-temperature">
-                     ${Math.round(
-                       forecast.main.temp_max
-                     )}°/ <strong> ${Math.round(
+  <div class="right-details">
+  <span class="first">
+  <span class="day-time"><strong>${dayHours(forecast.dt * 1000)}</strong></span>
+  <img class= "icon-size" src= "http://openweathermap.org/img/wn/${
+    forecast.weather[0].icon
+  }@2x.png"
+  />
+  <span class="forecast-temperature">
+  ${Math.round(forecast.main.temp_max)}°/ <strong> ${Math.round(
       forecast.main.temp_min
     )}°</strong> 
-                    </span>
-                  </span>
-                  </div>
-                `;
+  </span>
+</span>
+</div>
+`;
   }
 }
 
@@ -102,6 +97,8 @@ function searchLocation(position) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayTemperature);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function getCurrentLocation(event) {
