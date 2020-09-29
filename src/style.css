@@ -46,8 +46,8 @@ hr {
 }
 .main-icon {
   position: relative;
-  left: 50px;
-  bottom: 5px;
+  left: 20px;
+  bottom: 20px;
   width: 200px;
   height: 200px;
 }
@@ -77,14 +77,9 @@ hr {
   position: relative;
   line-height: 50px;
   bottom: -25px;
-  right: -30px;
+  right: 30px;
 }
 
-.units {
-  position: relative;
-  top: 190px;
-  left: 100px;
-}
 .weather-temperature strong {
   font-size: 40px;
   line-height: 1;
@@ -93,7 +88,7 @@ hr {
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -18px;
+  top: -50px;
 }
 .form-control {
   border: 4px solid #e7b51d;
